@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Library Management</title>
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; 
+            color: #343a40;
+        }
+
+        header {
+            background: url('backk.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav {
+            background: linear-gradient(90deg, #e1ebf6, #cceff3);
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 15px 22px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #0f67eb;
+            color: white;
+            border-radius: 10px;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1100px;
+            margin: 20px auto;
+            display: flex;
+            gap: 20px;
+        }
+
+        .content {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        section, article, aside {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover, article:hover, aside:hover {
+            transform: scale(1.03);
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h2, h3 {
+            color: #004085;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0; 
+        }
+
+        ul li {
+            background: #e9ecef;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        aside {
+            flex: 1;
+            text-align: center;
+            background: white;
+        }
+
+        footer {
+            background: #004085;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>Library Management</header>
+    <nav>  
+        <img src="bmw.jpg" alt="Bootstrap" width="30" height="30">  
+        <a href="#">Home</a>
+        <a href="#">Books</a>
+        <a href="#">Borrow & Return</a>
+        <a href="#">Contact</a>
+        <a href="public/wtex6.html" class="btn btn-outline-primary ms-3">Login</a>
+        <div class="btn-group">
+            <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+             Membership
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Standard Membership (Paid)</a></li>
+              <li><a class="dropdown-item" href="#"> Premium Membership (Paid)</a></li>
+              <li><a class="dropdown-item" href="#">Student Membership</a></li>
+              <li><a class="dropdown-item" href="#">Senior Citizen Membership</a></li>
+            </ul>
+          </div>
+    </nav>
+
+    <main>
+        <div class="content">
+            <section class="p-3">
+                <h2>Library Facilities</h2>
+                <ul>
+                    <li>Extensive Book Collection</li>
+                    <li>Digital Library Access</li>
+                    <li>Reading & Study Areas</li>
+                    <li>Book Reservation System</li>
+                </ul>
+            </section>
+
+            <article class="p-3">
+                <h2>Our Services</h2>
+                <p>We offer a variety of library services to enhance your reading experience:</p>
+                <ul>
+                    <li>Book Lending & Returns</li>
+                    <li>Online Catalog Access</li>
+                    <li>Research Assistance</li>
+                    <li>Children's Story Sessions</li>
+                    <li>Book Clubs & Author Talks</li>
+                </ul>
+            </article>
+        </div>
+        <aside class="p-3">
+            <h3>Latest Updates</h3>
+            <p>Stay updated with the latest book arrivals and library events:</p>
+            <ul>
+                <li>New Arrivals: Bestselling Fiction</li>
+                <li>Upcoming Book Fair</li>
+                <li>Library Membership Discounts</li>
+            </ul>
+        </aside>
+    </main>
+
+    <section class="container mt-4">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        How do I become a member?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can sign up for membership online or visit our library in person.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        How many books can I borrow at a time?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Members can borrow up to 5 books at a time.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>@ 2025 Library Management System</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
